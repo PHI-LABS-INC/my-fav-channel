@@ -102,13 +102,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     // Display the image (artwork or placeholder) if available
     if (artworkImage) {
       // Calculate dimensions for the artwork (make it fit nicely in the frame)
-      const maxWidth = 710;
-      const maxHeight = 710;
+      const maxWidth = 670;
+      const maxHeight = 670;
       const aspectRatio = artworkImage.width / artworkImage.height;
 
       // Shift the artwork slightly upwards and to the right
       const shiftUp = 28.5; // pixels to shift upwards
-      const shiftRight = 2.5; // pixels to shift right
+      const shiftRight = 0.1; // pixels to shift right
 
       let displayWidth = maxWidth;
       let displayHeight = maxWidth / aspectRatio;
